@@ -1,0 +1,96 @@
+nav {
+    background: #1f2020;
+    padding: 5px 40px;
+    box-shadow: 1px -2px 10px rgb(178, 40, 32);
+    height: 66px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+nav ul li {
+    padding: 15px 0;
+    cursor: pointer;
+    user-select: none;
+}
+
+nav ul li.items, li.login {
+    position: relative;
+    width: auto;
+    margin: 0 16px;
+    text-align: center;
+}
+
+nav ul li.items a:hover {
+    color: rgb(178, 40, 32);
+    text-decoration: none!important;
+}
+
+nav ul li.login a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/*nav ul li.items::after {*/
+/*    position: absolute;*/
+/*    content: '';*/
+/*    left: 0;*/
+/*    bottom: 5px;*/
+/*    height: 2px;*/
+/*    width: 100%;*/
+/*    background: rgba(244, 50, 38, 0.92);*/
+/*    opacity: 0;*/
+/*    transition: all .3s linear;*/
+/*}*/
+
+/*nav ul li.items:hover::after {*/
+/*    opacity: 1;*/
+/*    bottom: 8px;*/
+/*}*/
+
+nav ul img.logo {
+    width: 50px;
+    height: 50px;
+    cursor: default;
+    user-select: none;
+    margin-right: 20px;
+}
+
+nav ul li.login {
+    margin-left: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: rgb(178, 40, 32);
+    transition: .3s all ease;
+}
+
+nav ul li.login:hover {
+    background: rgba(148, 20, 13, 0.92);
+}
+
+nav ul li.items a, nav ul li.login a {
+    color: white;
+    font-family: 'Roboto';
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav ul li.discord a {
+    font-size: .8rem;
+}
+
+@media all and (max-width: 900px) {
+    nav {
+        padding: 5px 30px;
+    }
+
+    nav ul li.items {
+        flex: 0 0 100%;
+    }
+}

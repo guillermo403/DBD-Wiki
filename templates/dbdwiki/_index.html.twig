@@ -1,0 +1,25 @@
+{#Todos los supervivientes#}
+<section id="survis" class="personajes">
+    <h1><a href="">SUPERVIVIENTES <span>({{ personajes|length }})</span></a></h1>
+    {% for personaje in personajes %}
+        {% if personaje['Tipo'] == 'Superviviente' %}
+            <div>
+                <img src="{{ personaje['Imagen'] }}" alt="">
+                <p>{{ personaje['Nombre'] }}</p>
+            </div>
+        {% endif %}
+    {% endfor %}
+</section>
+
+{#Todos los asesinos#}
+<section id="killers" class="personajes">
+    <h1><a href="">ASESINOS <span>({{ personajes|length }})</span></a></h1>
+    {% for personaje in personajes  %}
+        {% if personaje['Tipo'] == 'Asesino' %}
+            <div>
+                <img src="{{ personaje['Imagen'] }}" alt="">
+                <p>{{ personaje['Nombre'] }}</p>
+            </div>
+        {% endif %}
+    {% endfor %}
+</section>

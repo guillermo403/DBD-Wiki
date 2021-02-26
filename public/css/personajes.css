@@ -1,0 +1,72 @@
+body {
+    background-image: url("../img/fondo_personajes.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    /*background-attachment: fixed;*/
+    background-size: cover;
+}
+
+/*************** supervivientes y asesinos ************/
+.personajes {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px 20px;
+    border-radius: 7px;
+}
+
+.personajes > h1 {
+    text-align: center;
+    width: 100%;
+    user-select: none;
+}
+
+.personajes > h1 > a {
+    font-family: "Roboto";
+    font-size: 3rem;
+    text-decoration: none;
+    color: rgba(216,217,212,0.99);
+}
+
+.personajes > h1 > a span {
+    font-size: 2rem;
+}
+
+.personajes > div {
+    width: 170px;
+    margin: 10px;
+    border: 2px solid rgb(178, 40, 32);
+    border-radius: 20px;
+    background-color: #1b1b19;
+    overflow: hidden;
+    height: 273px;
+    user-select: none;
+    cursor: pointer;
+    transition: .3s all ease;
+}
+
+.personajes > div:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 12px 1px rgb(178, 40, 32);
+}
+
+.personajes > div > img {
+    width: 100%;
+}
+
+.personajes > div > p {
+    text-align: center;
+    width: 100%;
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #b5b6bd;
+    padding: 3px;
+    background-color: #131312;
+}
+
+#killers {
+    margin-top: 42px;
+}
